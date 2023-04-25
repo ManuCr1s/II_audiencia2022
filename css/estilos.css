@@ -1,0 +1,14 @@
+body{
+	overflow-x:hidden;
+	background: #EFEFEF;
+}
+.svg2{
+	width: 14px;
+	color: #fff;
+}
+#titleA{
+	font-family: 'Mochiy Pop One', sans-serif;
+}
+#contador{
+	font-family: 'Mochiy Pop One', sans-serif;
+}
