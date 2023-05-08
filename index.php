@@ -13,7 +13,8 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 </head>
-<body style="background: #F9F9F9">
+<body>
+   <!--
    <header>
       <div class="container mx-auto box_1">
          <div class="row mx-auto justify-content-center align-items-center">
@@ -38,7 +39,8 @@
             <?php echo $input_contador;?>
          </div>
       </div>
-   </header>
+   </header>-->
+   <!--
    <section class="container mx-auto" style="margin-top: 1%;">
       <div class="row mx-auto justify-content-center align-items-center">
 
@@ -189,9 +191,144 @@
             return false;
          });
       });
-   </script>
-   <script type="text/javascript" src="js/main.js"></script>
+   </script>-->
+   <div class="container-fluid">
+      <div class="row bgc bgc-blue">
+      </div>
+      <div class="row bgc-brown">
+            <div class="container bgc-brown">
+                  <form class="form-inscription" id="register">
+                     
+                     <div class="bgc-white mb-5 pt-4 pl-5 pr-5 pb-5">
+                           <div class="form-row pb-3 mb-4 border-title">
+                              <div class="col">
+                                 <img src="img/log.png" alt="" class='img-header'>
+                              </div>
+                              <div class="col">
+                                 <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                          <h5 class="font-weight-bold"><span id="number" class="number badge badge-warning">0</span>: PARTICIPANTES INSCRITOS</h5>
+                                    </div>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+
+                           <div class="form-row my-2">
+                              <div class="col">
+                                 <h5 class='font-weight-bold text-form text-form_plomo'>FORMULARIO DE REGISTRO</h5>
+                                 <p class="text-form_claro">Por favor ingrese sus datos personales</p>
+                              </div>
+                           </div>
+
+                           <div class="form-row my-4">
+                              <div class="form-group col-md-4">
+                                    <div class="row">
+                                       <div class="col-md-9">
+                                             <label for="dni">Ingrese Numero de Dni</label>
+                                             <input type="numeric" class="form-control input-form" id="dni" name="dni" autocomplete="off" placeholder="Numero de Documento" minlength="8" maxlength="8" required>
+                                       </div>   
+                                       <div class="col-md-3 d-flex align-items-end">
+                                             <button type="button" class="btn btn-primary" id="buscar">
+                                                <img class="svg-white" src="img/icon/user-tie.svg">
+                                             </button>
+                                       </div>
+                                    </div>
+                                 
+                                
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="inputPassword4">Nombres</label>
+                                 <input type="text" class="form-control input-form" id="nombre" name="nombre" readonly>
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="inputPassword4">Apellidos</label>
+                                 <input type="text" class="form-control input-form" id="apellido" name="apellido" readonly>
+                              </div>
+                           </div>
+
+
+                           <div class="form-row my-4">
+                              <div class="form-group col-md-6">
+                                 <label for="inputEmail4">Provincia</label>
+                                 <select class="custom-select mr-sm-2 form-select" id="provincia" name="provincia" onchange="myFunction(value);">
+                                       <option selected>Seleccione su Provincia:</option>
+                                       <option value="1">Pasco</option>
+                                 </select>
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                 <label for="inputPassword4">Distrito</label>
+                                 <select class="custom-select mr-sm-2 form-select" id="distrito" name="distrito">
+                                       <option selected>Seleccione su Distrito</option>
+                                       <option value="Chaupimarca">Chaupimarca</option>
+                                       <option value="Yanacancha">Yanacancha</option>
+                                       <option value="Huachón">Huachón</option>
+                                       <option value="Huariaca">Huariaca</option>
+                                       <option value="Huayllay">Huayllay</option>
+                                       <option value="Ninacaca">Ninacaca</option>
+                                       <option value="Pallanchacra">Pallanchacra</option>
+                                       <option value="Paucartambo">Paucartambo</option>
+                                       <option value="Yarusyacan">Yarusyacan</option>
+                                       <option value="Simón Bolívar">Simón Bolívar</option>
+                                       <option value="Ticlacayan">Ticlacayan</option>
+                                       <option value="Tinyahuarco">Tinyahuarco</option>
+                                       <option value="Vicco">Vicco</option>
+                                 </select>
+                              
+                              </div>
+                           </div>
+
+
+                           <div class="form-row  my-4">
+                              <div class="form-group col-md-6">
+                                 <label for="inputEmail4">Asociacion u organizacion a la que representa</label>
+                                 <input type="text" class="form-control input-form" id="asociacion" name="asociacion" placeholder="Asociacion" >
+                              </div>
+                              <div class="form-group col-md-6">
+                                 <label for="inputPassword4">Cargo</label>
+                                 <input type="text" class="form-control input-form" id="cargo" name="cargo" placeholder="Cargo" >
+                              </div>
+                           </div>
+
+
+                           <div class="form-row my-4">
+                              <div class="form-group col-md-4">
+                                 <label for="inputEmail4">Grado de Instruccion</label>
+                                 <select class="custom-select mr-sm-2" id="gradoInstruccion" name="gradoInstruccion">
+                                    <option selected>Seleccione su Grado de Instrucción</option>
+                                    <option value="Sin Estudios">Sin Estudios</option>
+                                    <option value="Primario">Primario</option>
+                                    <option value="Secundario">Secundario</option>
+                                    <option value="Medio Superior">Medio Superior</option>
+                                    <option value="Superior">Superior</option>
+                                 </select>
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="inputPassword4">Profesion</label>
+                                 <input type="text" class="form-control input-form" placeholder="Profesion" id="profesión" name="profesión">
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="inputPassword4">Fecha de Nacimiento</label>
+                                 <input type="date" class="form-control input-form" placeholder="Fecha de Nacimiento" id="fNacimiento" name="fNacimiento" >
+                              </div>
+                           </div>
+                       
+                           <div class="form-row my-2">
+                              <div class="form-group col-md-4">
+                                 <input type="submit" class="btn bgc-orange text-white font-weight-bold px-5 py-2" value="INSCRIBIRSE">
+                              </div>
+                           </div>
+                     </div>
+
+                  </form>
+            </div>
+      </div>
+   </div>
    <script type="text/javascript" src="js/jquery.js"></script>
-   <script src="js/bootstrap.js" charset="utf-8"></script>
+   <script type="text/javascript" src="js/sweetalert.min.js"></script>
+   <script type="text/javascript" src="js/date.js"></script>
+   <script type="text/javascript" src="js/searchdni.js"></script>
+   <script type="text/javascript" src="js/date_post.js"></script>
 </body>
 </html>

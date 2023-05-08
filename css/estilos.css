@@ -1,14 +1,48 @@
-body{
-	overflow-x:hidden;
-	background: #EFEFEF;
+.bgc{
+	height: 13vw;
 }
-.svg2{
-	width: 14px;
-	color: #fff;
+.bgc-blue{
+	background-color:#195fa7;
 }
-#titleA{
-	font-family: 'Mochiy Pop One', sans-serif;
+.bgc-white{
+	background-color:#fff;
 }
-#contador{
-	font-family: 'Mochiy Pop One', sans-serif;
+.bgc-brown{
+	background-color:#ebebeb;
+}
+.bgc-orange{
+	background-color: #FFA534;
+}
+.input-form{
+	border: none;
+	border-radius: 0;
+	background: none;
+	border-bottom: 1px solid #919191;
+}
+.form-inscription{
+   box-shadow: 0px 21px 38px -21px rgba(0,0,0,0.68);
+   margin-top: -15%;
+}
+.text-form{
+ 	letter-spacing: 1px;
+}
+.text-form_plomo{
+	color: #747474;
+}
+.text-form_claro{
+	color: #8a8a8a;
+}
+.border-title{
+	border-bottom: 2px solid #e7e9eb;
+}
+.img-header{
+	width: 30%;
+}
+.number{
+	font-size: 30px;
+}
+.svg-white{
+	width: 20px;
+	height: 20px;
+	color: white;
 }
