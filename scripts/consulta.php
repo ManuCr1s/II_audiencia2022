@@ -1,11 +1,15 @@
 <?php
-
-require_once 'conexion.php';
-
+require_once '../class/inscripcion.php';
+$person = new Inscripcion();
+if($person->show($_POST['dni'])){
+	$datos = ['status'=>false, 'message'=>'El usuario ya se encuentra registrado'];
+	echo json_encode($datos);
+}else{
+	
+}
+/*
 $key = $_POST['dni'];
-
 $query = "SELECT inscripcionp.idPersona, inscripcionp.dniPersona, inscripcionp.nombrePersona, inscripcionp.apellidosPersona FROM inscripcionp WHERE dniPersona = '$key'";
-
 $result = $db->query($query);
 
 if ($result->num_rows > 0) {
@@ -18,5 +22,4 @@ if ($result->num_rows > 0) {
 	$datos = file_get_contents('https://dniruc.apisperu.com/api/v1/dni/'.$key.'?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImpvaGFubmVzdmM1QGdtYWlsLmNvbSJ9.z0XDnPGLK81EXms1XO4KLFRF40MJrSjE0ixb7xj9Hpw');
 	echo $datos;
 }
-
-?>
+*/

@@ -4,7 +4,7 @@ $(document).ready(function(){
         event.preventDefault();
         let dates = $(this).serialize();
         $.ajax({
-            url:'registro.php',
+            url:'scripts/registro.php',
             type:'POST',
             data:dates,
             success:function(response){

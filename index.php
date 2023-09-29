@@ -22,7 +22,9 @@
                <img src="img/heade.png" class="img-fluid" style="margin-bottom: 5px;">
             </div>
          </div>
+
          <?php
+            /*
             require_once 'conexion.php';
             $query="SELECT
             COUNT(inscripcionp.dniPersona) AS contador
@@ -34,9 +36,10 @@
                   $input_contador = '<h4 class="text-right" id="contador">'.number_format($fila['contador']).'<span class="text-danger"> participantes inscritos</span> </h4>';
                }
             }
+            */
          ?>
          <div class="form-group col-md-12" style="margin-top:5px; color: #02416A">
-            <?php echo $input_contador;?>
+         
          </div>
       </div>
    </header>-->
@@ -330,5 +333,6 @@
    <script type="text/javascript" src="js/date.js"></script>
    <script type="text/javascript" src="js/searchdni.js"></script>
    <script type="text/javascript" src="js/date_post.js"></script>
+   <script type="text/javascript" src="js/count.js"></script>
 </body>
 </html>
